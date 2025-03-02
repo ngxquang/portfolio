@@ -35,6 +35,20 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import quang1 from './quang1.png';
+import devops from './devops.png';
+import devops_dark from './devops_dark.png';
+import exp_icon from './exp_icon.png';
+import exp_icon_dark from './exp_icon_dark.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { 
+    faServer, 
+    faCodeBranch, 
+    faDatabase, 
+    faCogs, 
+    faCloud 
+} from "@fortawesome/free-solid-svg-icons";
+
 
 export const assets = {
     user_image,
@@ -73,44 +87,110 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    quang1,
+    devops,
+    devops_dark,
+    exp_icon,
+    exp_icon_dark
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Contribution to OpenSource TypeORM',
+        description: 'Contributed docs to optimize database performance.',
         bgImage: '/work-1.png',
+        link: 'https://github.com/typeorm/typeorm/pull/11068'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Minimart Management - Frontend',
+        description: 'Developed the frontend for a supermarket management system using Next.js.',
         bgImage: '/work-2.png',
+        link: 'https://github.com/ngxquang/PJ-02-Mart-Management-FE.git'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Minimart Management - Backend',
+        description: 'Built the backend for a minimart management system using NestJS with MySQL, deploy on AWS Cloud.',
         bgImage: '/work-3.png',
+        link: 'https://github.com/ngxquang/PJ-02-Mart-Management-BE.git'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Spring Boot Microservices',
+        description: 'Built a scalable microservices architecture using Spring Boot, Kafka, Docker, Kubernetes.',
         bgImage: '/work-4.png',
+        link: 'https://github.com/ngxquang/spring-boot-microservices'
     },
-]
+];
+
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    { 
+        icon: <FontAwesomeIcon icon={faServer} className="w-10 h-10 text-gray-700 dark:text-white" />, 
+        title: 'Backend Development', 
+        description: 'Building scalable and high-performance backend systems using Java (Spring Boot) & JavaScript (NestJS, Express.js).'
+    },
+    { 
+        icon: <FontAwesomeIcon icon={faCodeBranch} className="w-10 h-10 text-gray-700 dark:text-white" />, 
+        title: 'API Design & Development', 
+        description: 'Designing RESTful APIs with authentication, authorization, and optimization for high-traffic applications.'
+    },
+    { 
+        icon: <FontAwesomeIcon icon={faDatabase} className="w-10 h-10 text-gray-700 dark:text-white" />, 
+        title: 'Database Management', 
+        description: 'Optimizing relational (PostgreSQL, MySQL) and NoSQL databases for performance, security, and scalability.'
+    },
+    { 
+        icon: <FontAwesomeIcon icon={faCogs} className="w-10 h-10 text-gray-700 dark:text-white" />, 
+        title: 'DevOps & CI/CD', 
+        description: 'Automating infrastructure with Docker, Kubernetes, and CI/CD pipelines (GitHub Actions, Jenkins).'
+    },
+    { 
+        icon: <FontAwesomeIcon icon={faCloud} className="w-10 h-10 text-gray-700 dark:text-white" />, 
+        title: 'Cloud Computing', 
+        description: 'Deploying and managing applications on AWS services (EC2, RDS, S3, CloudWatch, IAM).'
+    }
+];
+
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { 
+        icon: assets.code_icon, 
+        iconDark: assets.code_icon_dark, 
+        title: 'Languages & Technologies', 
+        description: 'Java, JavaScript, TypeScript, HTML, CSS, React.js, Next.js, NestJS, Spring Boot' 
+    },
+    // { 
+    //     icon: assets.devops, 
+    //     iconDark: assets.devops_dark, 
+    //     title: 'DevOps & Cloud', 
+    //     description: 'Docker, Kubernetes, CI/CD, AWS (EC2, RDS, ECR, S3, CloudWatch, IAM)' 
+    // },
+    { 
+        icon: assets.edu_icon, 
+        iconDark: assets.edu_icon_dark, 
+        title: 'Education', 
+        description: 'Software Engineer student at UIT - VNUHCM, focusing on Backend Development and Cloud Computing' 
+    },
+    // { 
+    //     icon: assets.project_icon, 
+    //     iconDark: assets.project_icon_dark, 
+    //     title: 'Projects', 
+    //     description: 'Built 5+ projects, including a supermarket management system and portfolio website' 
+    // },
+    { 
+        icon: assets.exp_icon, 
+        iconDark: assets.exp_icon_dark, 
+        title: 'Experience', 
+        description: 'Hands-on with AWS services, REST APIs, database optimization, and monitoring tools' 
+    },
+    // { 
+    //     icon: assets.interest_icon, 
+    //     iconDark: assets.interest_icon_dark, 
+    //     title: 'Interests', 
+    //     description: 'Scalable system design, DevOps automation, backend optimization, and cloud security' 
+    // }
 ];
+
 
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
