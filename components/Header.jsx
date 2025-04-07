@@ -15,7 +15,7 @@ const Header = () => {
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
       >
         <Image
-          src={assets.quang1}
+          src={assets.quang2}
           alt=""
           className="rounded-full w-32 h-32 object-cover"
         />
