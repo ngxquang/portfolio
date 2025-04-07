@@ -34,7 +34,7 @@ const About = ({ isDarkMode }) => {
           className="w-64 sm:w-80 rounded-3xl max-w-none"
         >
           <Image
-            src={assets.quang1}
+            src={assets.quang2}
             alt="user"
             className="w-full rounded-3xl"
           />

@@ -40,6 +40,7 @@ import devops from './devops.png';
 import devops_dark from './devops_dark.png';
 import exp_icon from './exp_icon.png';
 import exp_icon_dark from './exp_icon_dark.png';
+import quang2 from './quang2.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
     faServer, 
@@ -92,7 +93,8 @@ export const assets = {
     devops,
     devops_dark,
     exp_icon,
-    exp_icon_dark
+    exp_icon_dark,
+    quang2
 };
 
 export const workData = [
